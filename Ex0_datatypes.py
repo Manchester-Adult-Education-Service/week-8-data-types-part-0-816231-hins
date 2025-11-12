@@ -32,6 +32,14 @@ print("-------------------------------------------\n"
 # Are you a Baby Boomer? True
 #
 # Write your code below:
+birth_yr=int(input("Enter your birth year: "))
+current_age=2025-birth_yr
+if 1946<=birth_yr<=1964:
+    is_boomer=True
+else:
+    is_boomer=False
+print(f"Your age : {current_age}")
+print(f"Are you a Baby Boomer? {is_boomer}")
 
 
 
@@ -56,7 +64,15 @@ print("-------------------------------------------\n"
 # Is expensive (over £25): True
 #
 # Write your code below:
-
+price_list=[5.99,12.50,8.75]
+total=sum(price_list)
+#if total>=25:
+ #   is_expensive=true
+#else:
+ #   is_expensive= False
+is_expensive =total>25
+print(f"Total: {total:.2f}")
+print("Is expensive (over 25) :",is_expensive)
 
 
 
@@ -83,6 +99,18 @@ print("-------------------------------------------\n"
 # Contains letter 'a': True
 #
 # Write your code below:
+username=input("Enter a username: ")
+if len(username)>=5:
+    is_long_enough=True
+else:
+    is_long_enough=False
+if "a" in username:
+    has_letter_a =True
+else:
+    has_letter_a=False
+print(f"Username : {username}")
+print(f"Long enough (5+characters) :{is_long_enough}")
+print(f"Contains letter 'a': {has_letter_a}")
 
 
 
